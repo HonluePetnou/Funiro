@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Furniture Showcase</title>
+    <link rel="icon" href="../assets/logo.png" sizes="64x64" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../RemixIcon-master/fonts/remixicon.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <input type="checkbox" id="flip">
+    <div class="cover">
+      <div class="front">
+        <img src="../assets/hero2.jpg" alt="">
+        <div class="text">
+          <span class="text-1">Every new friend is a <br> new adventure</span>
+          <span class="text-2">Let's get connected</span>
+        </div>
+      </div>
+      <div class="back">
+        <img class="backImg" src="../assets/hero3.jpg" alt="">
+        <div class="text">
+          <span class="text-1">Complete miles of journey <br> with one step</span>
+          <span class="text-2">Let's get started</span>
+        </div>
+      </div>
+    </div>
+    <div class="forms">
+        <div class="form-content">
+          <div class="login-form">
+            <div class="title">Login</div>
+          <form action="#">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="ri-mail-line"></i>
+                <input type="text" placeholder="Enter your email" required>
+              </div>
+              <div class="input-box">
+                <i class="ri-git-repository-private-line"></i>
+                <input type="password" placeholder="Enter your password" required>
+              </div>
+              <div class="text"><a href="#" class="forgot">Forgot password?</a></div>
+              <div class="button input-box">
+                <input type="submit" value="Sumbit" class="validate">
+              </div>
+              <div class="text sign-up-text">Don't have an account? <label for="flip">Sigup now</label></div>
+            </div>
+        </form>
+      </div>
+      <div class="signup-form">
+          <div class="title">Signup</div>
+        <form action="#" class="signin">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="ri-user-line"></i>
+                <input class="username" type="text" placeholder="Enter your Username" required>
+              </div>
+              <div class="input-box">
+                <i class="ri-mail-line"></i>
+                <input class="email" type="text" placeholder="Enter your email" required>
+              </div>
+              <div class="input-box">
+                <i class="ri-git-repository-private-line"></i>
+                <input class="password" type="password" placeholder="Enter your password" required>
+              </div>
+              <div class="input-box">
+                <i class="ri-git-repository-private-line"></i>
+                <input class="ConfirmPassword" type="password" placeholder="Confirm your password" required>
+                <i class="ri-eye-line"></i>
+              </div>
+              <div class="checkbox-text">
+                <div class="checkbox-content">
+                  <input type="checkbox" />
+                  <label for="termCon" class="text">I accepted all terms and conditions</label>
+                </div>
+              </div>
+              <div class="button input-box">
+                <input type="submit" value="Sumbit" class="valide">
+              </div>
+              <div class="text sign-up-text">Already have an account? <label for="flip">Login now</label></div>
+            </div>
+        </form>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="error">
+    <div class="error-action">
+       x
+    </div>
+    <p class="error-message"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
