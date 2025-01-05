@@ -74,3 +74,6 @@ new Chart(ctxProduct, {
     }
   }
 });
+
+
+// app bar
