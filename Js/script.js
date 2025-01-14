@@ -41,3 +41,8 @@ indicators.forEach((indicator) => {
 
 // Initialize slider
 updateSlider(currentIndex);
+
+document.querySelector('.nav-btn').addEventListener("click", () => {
+    // Redirect to the desired URL
+    window.location.href = "../Html/form.html";
+  });

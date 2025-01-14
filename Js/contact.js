@@ -1,9 +1,9 @@
 const images = [
-    "../assets/hero1.jpg",
-    "../assets/hero2.jpg",
-    "../assets/hero3.jpg",
-    "../assets/hero4.jpg",
-    "../assets/chairs1.jpg",
+    "../Assets/Images/hero1.jpg",
+    "../Assets/Images/hero2.jpg",
+    "../Assets/Images/hero3.jpg",
+    "../Assets/Images/hero4.jpg",
+    "../Assets/Images/chairs1.jpg",
 ];
 
 // Target the slider

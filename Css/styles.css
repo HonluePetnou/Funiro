@@ -80,6 +80,17 @@ header{
 .nav-actions i:hover{
     color: #ff8c42;
 }
+.nav-btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff8c42;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.nav-btn:hover{
+    background-color: #e6763e;
+}
 .avatar{
     height: 40px;
     width: 40px;
@@ -437,7 +448,7 @@ header{
     width: 100%;
     justify-content: space-between;
     text-align: left;
-    padding: 20px;
+    padding: 12px;
     background-color: #fcb962;
     color: #513919;
 }

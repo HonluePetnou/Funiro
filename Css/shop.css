@@ -3,7 +3,7 @@
     position: relative;
     width: 100%;
     height: 300px;
-    background: url('../assets/hero3.jpg') no-repeat center center/cover;
+    background: url('../Assets/Images/hero3.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -82,9 +82,9 @@ const redirectButton = document.getElementById("redirectButton");
 // Add a click event listener
 submitButton.addEventListener("click", () => {
   // Redirect to the desired URL
-  window.location.href = "../choice/index.html";
+  window.location.href = "../Html/Home.html";
 });
 document.querySelector('.validate').addEventListener("click", () => {
   // Redirect to the desired URL
-  window.location.href = "../choice/index.html";
+  window.location.href = "../Html/Home.html";
 });
