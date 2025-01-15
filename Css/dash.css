@@ -380,26 +380,35 @@ button {
 }
 
 .stat-card {
+  display: flex;
+  justify-content: space-between;
   flex: 1;
   min-width: 200px;
   background-color: #ff8c42;
   color: white;
   padding: 20px;
   border-radius: 10px;
-  text-align: center;
+  text-align: left;
 }
-
+.stat-icon i{
+  font-size: 3.5rem;
+}
 .stat-card h2 {
   margin: 0;
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 .stat-card p {
   margin: 5px 0 0;
+  font-size: 1.2rem;
 }
-
-.doughnut-chart {
-  height: 400px; /* Increased height for better display */
+.chart{
+  display: flex;
+  width: 100%;
+  column-gap: 20px;
+}
+.chart .card{
+  width: 50%;
 }
 
 
