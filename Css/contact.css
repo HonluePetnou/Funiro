@@ -58,18 +58,7 @@
     justify-content: center;
     align-items: center;
 }
-/* .description{
-    width: 50%;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-.description h2{
-    font-size: 2rem;
-    margin-bottom: 0.25rem;
-} */
+
 .container{
 	position: relative;
 	width: 100%;
@@ -79,7 +68,11 @@
 	align-items: center;
 	padding: 20px 100px;
 }
-
+@media screen and (max-width: 1200px){
+    .container{
+        padding: 20px;
+    }    
+}
 .container:after{
 	content: '';
 	position: absolute;
@@ -100,16 +93,20 @@
 	background-color: #fff;
 	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
 }
-
+@media screen and (max-width: 1500px){
+    .contact-box{
+        width: 90%;
+        height: auto;
+    }    
+}
 .left{
 	background: url("../Assets/Images/chairs3.jpg") no-repeat center;
 	background-size: cover;
 	height: 100%;
     transition: background-image 0.9s ease;
 }
-
 .right{
-	padding: 16px 40px;
+    padding: 16px 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -124,7 +121,6 @@
 .right h2:after{
 	content: '';
     position: absolute;
-    left: 50%;
     bottom: 0;
     transform: translateX(-50%);
     height: 4px;
@@ -174,11 +170,11 @@ textarea{
     background-color: #fff;
 }
 
-/* @media screen and (max-width: 880px){
+@media screen and (max-width: 900px){
 	.contact-box{
 		grid-template-columns: 1fr;
 	}
 	.left{
 		height: 200px;
 	}
-} */
+}

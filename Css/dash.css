@@ -384,7 +384,9 @@ button {
   justify-content: space-between;
   flex: 1;
   min-width: 200px;
-  background-color: #ff8c42;
+  /* background-color: #ff8a42be; */    
+  /* background-color: linear-gradient( 3ff8a42be ); */
+  background: linear-gradient(to bottom right, rgba(255, 138, 66, 1), rgba(255, 105, 50, 0.8), rgba(255, 98, 0, 1));
   color: white;
   padding: 20px;
   border-radius: 10px;

@@ -46,3 +46,10 @@ document.querySelector('.nav-btn').addEventListener("click", () => {
     // Redirect to the desired URL
     window.location.href = "../Html/form.html";
   });
+
+  const mobileMenu = document.getElementById('mobile-menu');
+  const navLinks = document.querySelector('.nav-links');
+
+  mobileMenu.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+  });

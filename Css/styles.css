@@ -154,6 +154,42 @@ header{
 .dropdown:hover .dropdown-content {
     display: block;
 }
+.menu-toggle{
+    display: none;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 830px) {
+    .nav-links,.nav-actions {
+        display: none;
+    }
+    .menu-toggle{
+        display: block;
+    }
+    .hero-content {
+        width: 80%;
+        margin: auto;
+        top: 10%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .hero-content {
+        position: relative;
+        top: 0;
+        left: 10% !important;
+        right: 10% !important;
+        padding: 10px;
+        width: auto !important;;
+        height: auto !important;
+        max-height: 90%;
+        text-align: justify;
+    }
+    .hero-content p{
+        display: inline-flex;
+        flex-wrap: wrap;
+        text-align: justify;
+    }
+}
 
 /* Hero Section */
 .hero {
@@ -257,6 +293,19 @@ header{
     margin: 0px 60px;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
     gap: 28px;
+}
+@media screen and (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+        margin: 0px 30px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: 1fr 1fr;
+        margin: 0 40px;
+    }
 }
 .product-card{
     padding: 0;
@@ -462,6 +511,19 @@ header{
     columns: 4;
     gap: 15px;
 }
+@media screen and (max-width: 768px) {
+    .grid {
+        columns: 2;
+    }
+
+    .gallery-content {
+        width: 100%;
+    }
+
+    .slider-container {
+        display: none;
+    }
+}
 
 .grid-item {
     position: relative;
@@ -519,6 +581,22 @@ header{
     flex-direction: row;
     justify-content: space-around;
 }
+@media screen and (max-width: 500px) {
+    .marketing{
+        flex-direction: column;
+        display: block;
+        text-align: justify;
+        height: auto;
+    }
+    
+}
+@media screen and (min-width: 500px) and (max-width: 1120px) {
+    .marketing{
+        display: none;
+    }
+    
+}
+
 .strength{
     display: flex;
     width: 100%;
@@ -551,6 +629,23 @@ header{
     padding: 40px 20px;
     border-top: 1px solid #ddd;
     width: 100%;
+}
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer-section {
+        margin: 15px 0;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1324px) {
+    .footer{
+        width: 100%;
+        flex-wrap: wrap;    
+    }
 }
 
 .footer-container {
@@ -603,6 +698,7 @@ header{
 /* Newsletter Form */
 .footer-section.newsletter form {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 10px;
 }
