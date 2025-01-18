@@ -38,10 +38,15 @@ header{
     height: 68px;
     width: 100%;
 }
-.nav-links {
+.nav-links,.nav-links1 {
     display: flex;
     list-style: none;
     column-gap: 35px;
+}
+.nav-links1{
+    padding-top: 20px;
+    flex-direction: column;
+    row-gap: 20px;
 }
 .nav-actions{
     display: flex;
@@ -157,6 +162,32 @@ header{
 .menu-toggle{
     display: none;
     font-size: 2rem;
+}
+.drawer {
+    z-index: 9999999;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #f9f9f9;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.3);
+    transition: right 0.3s ease;
+}
+
+.drawer-content {
+    padding: 20px;
+}
+
+.close-btn {
+    font-size: 24px;
+    cursor: pointer;
+    float: right;
+}
+
+/* Drawer open state */
+.drawer.open {
+    right: 0;
 }
 
 @media screen and (max-width: 830px) {

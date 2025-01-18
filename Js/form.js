@@ -39,6 +39,8 @@ form.addEventListener("submit", (event) => {
   if (usernameInput.value.trim().length < 3) {
     error.innerHTML += "Username must be at least 3 characters long.<br/>";
     isValid = false;
+  }else{
+    const a = 1;
   }
 
   // Validate email (basic email regex)
@@ -46,29 +48,44 @@ form.addEventListener("submit", (event) => {
   if (!emailRegex.test(emailInput.value.trim())) {
     error.innerHTML += "Please enter a valid email address.<br/>";
     isValid = false;
+  }else{
+    const b = 1;
   }
 
   // Validate password (at least 6 characters)
   if (passwordInput.value.trim().length < 6) {
     error.innerHTML += "Password must be at least 6 characters long.<br/>";
     isValid = false;
+  }else{
+    const c = 1;
   }
 
   // Confirm password match
   if (passwordInput.value.trim() !== confirmPasswordInput.value.trim()) {
     error.innerHTML += "Passwords do not match.<br/>";
     isValid = false;
+  }else{
+    const d = 1;
   }
 
   // Check if terms and conditions are accepted
   if (!termsCheckbox.checked) {
     error.innerHTML += "You must accept the terms and conditions. <br/>";
     isValid = false;
+  }else{
+    const e = 1;
   }
 
   // Prevent form submission if invalid
   if (!isValid) {
     event.preventDefault();
+  }
+
+  if (a == 1 && b == 1 && c == 1 && d == 1 && e == 1) {
+    submitButton.addEventListener("click", () => {
+      // Redirect to the desired URL
+      window.location.href = "../Html/Home.html";
+    });
   }
 });
 errorAction.addEventListener("click", () => {
@@ -80,10 +97,6 @@ errorAction.addEventListener("click", () => {
 const redirectButton = document.getElementById("redirectButton");
 
 // Add a click event listener
-submitButton.addEventListener("click", () => {
-  // Redirect to the desired URL
-  window.location.href = "../Html/Home.html";
-});
 document.querySelector('.validate').addEventListener("click", () => {
   // Redirect to the desired URL
   window.location.href = "../Html/Home.html";
