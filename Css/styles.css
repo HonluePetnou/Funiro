@@ -345,6 +345,7 @@ header{
     background-color: #F4F5F7;
     border-radius: 4px;
     position: relative;
+    overflow: hidden;
 }
 .product-card:hover{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
@@ -392,6 +393,39 @@ header{
 .bull span , .bull1 span{
     color: #f4f4f4;
 }
+.product-card-action{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 4px;
+    transition: right 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-card:hover .product-card-action{
+    right: 0;
+}
+
+.product-card-action button{
+    padding: 12px 24px;
+    background-color: #00000093;
+    border: none;
+    outline: none;
+    color: #ff6200;
+    cursor: pointer;
+}
+.product-card-action button:hover{
+    background-color: #000000c3;
+}
+.product-card-action button i{
+    font-size: 1.2rem;
+}
+/* the select the hover parent and child  thenset rigth to 0 */
 .products-action{
     width: 100%;
     text-align: center;
