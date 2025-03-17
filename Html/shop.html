@@ -24,7 +24,32 @@
         <ul class="nav-actions">
             <div class="nav-actions1">
                 <li><i class="ri-search-line"></i></li>
-                <li><i class="ri-shopping-cart-line"></i></li>
+                <li>
+                    <section id="cart">
+                        <i class="ri-shopping-cart-line"></i>
+                        <!-- Cart Dialog -->
+                        <div id="cartDialog" class="cart-dialog">
+                            <div class="cart-dialog-header">
+                                <span>Your Cart</span>
+                                <button class="close-button" id="closeCartButton"><i class="ri-close-large-line"></i></button>
+                            </div>
+                            <div class="cart-dialog-content">
+                                <div class="cart-item">
+                                    <img src="item1.jpg" alt="Item 1">
+                                    <div class="cart-item-details">
+                                        <h5>Item Name</h5>
+                                    </div>
+                                    <div class="cart-item-price">$10.00</div>
+                                    <button class="remove-button">Remove</button>
+                                </div>
+                                <!-- Additional items can be added here -->
+                            </div>
+                            <div class="cart-dialog-footer">
+                                <button id="checkoutButton">Checkout</button>
+                            </div>
+                        </div>
+                    </section>
+                </li>
             </div>
             <li class="dropdown">
                 <img src="../Assets/Images/avatar.png" alt="avatar" class="avatar">
@@ -377,5 +402,6 @@
     </div>
 </footer>
 <script src="../Js/drawer.js"></script>
+<script src="../Js/shop.js"></script>
 </body>
 </html>
